@@ -25,7 +25,7 @@ function setQuery(e) {
     }
 };
 function inputBtn() {
-    if (inputValue.value != 0) {
+    if (inputValue.value !== 0) {
         input(inputValue.value);
     }
 };
