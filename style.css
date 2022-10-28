@@ -71,6 +71,9 @@ body {
     border-radius: 15px;
     margin-left: 10px;
 }
+.btn:hover{
+    background: rgb(156, 235, 255);
+}
 .weatherbcontainer_false {
     visibility: hidden;
 }
