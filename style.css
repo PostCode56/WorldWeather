@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+body {
+    background: url(./images/fonhullhd.png);
+    background-size: cover no-repeat;
+}
+.blog_false {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    animation: start 1s 1;
+    font-family: 'Ubuntu', sans-serif;
+}
+@keyframes start {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.blog_true {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    position: relative;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.title {
+    text-align: center;
+    font-size: 92px;
+    color: rgb(255, 255, 255);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding-bottom: 20px;
+}
+.blog_item {
+    width: auto;
+    height: 120px;
+    margin: 0 auto;
+}
+.input_blog {
+    height: 60px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.title_blog {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 64px;
+    padding-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Signika Negative', sans-serif;
+}
+.inputValue {
+    width: 600px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 15px;
+    padding-left: 15px;
+    outline: none;
+}
+.btn {
+    width: 100px;
+    height: 42px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+.weatherbcontainer_false {
+    visibility: hidden;
+}
+.weatherbcontainer_true {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    visibility: visible;
+    animation: start2 1s 1;
+}
+@keyframes start2 {
+    0% {
+        transform: translate(50%, 50%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.wetItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.wetblock {
+    width: 50%;
+    font-family: 'Abel', sans-serif;
+}
+.date {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.CloudBlock {
+    display: flex;
+    justify-content: center;
+}
+.cloundText {
+    width: 180px;
+    max-width: 280px;
+    height: auto;
+    font-size: 28px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: -0.5px -0.5px 0 rgb(139, 139, 139),
+        0.5px -0.5px 0 rgb(139, 139, 139),
+        -0.5px 0.5px 0 rgb(139, 139, 139),
+        -0.5px 0 0 rgb(139, 139, 139),
+        0.5px 0 0 rgb(139, 139, 139),
+        0 -0.5px 0 rgb(139, 139, 139),
+        0 0.5px 0 rgb(139, 139, 139);
+}
+.textblock {
+    margin-top: 60px;
+    text-align: center;
+}
+.temp {
+    font-size: 142px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.staticsblock {
+    background: rgba(209, 209, 209, 0.4);
+    border-radius: 10px;
+    top: 30%;
+    position: relative;
+}
+.statics {
+    justify-content: space-between;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contspawn {
+    display: flex;
+    justify-content: center;
+}
+.symbol--prh {
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+}
+.prhpercent {
+    color: rgb(255, 255, 255);
+}
+.text--prh {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    margin-top: 22px;
+}
+.prhm_s {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-top: 12px;
+}
+.title_weath {
+    font-size: 22px;
+    padding-top: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.text--wth {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.stattextblock {
+    width: 33%;
+    font-size: 36px;
+}
+.text--spawn {
+    position: relative;
+    font-size: 104px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.clound_icon {
+    width: 312px;
+    height: 312px;
+}
+@media (max-width: 1500px) {
+    body {
+        background: url(./images/fon1500px.png);
+        height: auto;
+    }
+}
+@media (max-width: 1200px) {
+    body {
+        background: url(./images/fon1500px.png);
+    }
+    .staticsblock {
+        width: 550px;
+        margin-left: 30px;
+    }
+}
+@media (max-width: 925px) {
+    body {
+        background: url(./images/fonmobblie.png);
+    }
+    .title {
+        font-size: 64px;
+    }
+    .wetItem {
+        flex-direction: column;
+        width: 100%;
+    }
+    .backg--block {
+        width: 550px;
+    }
+    .wetblock {
+        margin: 0 auto;
+    }
+}
+@media (min-width: 651px) and (max-width: 850px) {
+    body {
+        background: url(./images/fonmobblie.png);
+    }
+    .blog_true {
+        margin-top: 50px;
+    }
+    .input_blog {
+        width: 768px;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .inputValue {
+        width: 400px;
+    }
+    .title {
+        font-size: 48px;
+    }
+    .wetItem {
+        flex-direction: column;
+        width: 100%;
+    }
+    .backg--block {
+        width: 550px;
+    }
+    .wetblock {
+        margin: 0 auto;
+    }
+}
+@media (min-width: 400px) and (max-width:650px) {
+    body {
+        background: url(./images/fonmobblie.png);
+    }
+    .blog_false {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .blog_true {
+        margin-top: 50px;
+    }
+    .wetblock {
+        width: 300px;
+    }
+    .input_blog {
+        width: 100%;
+        margin-left: 0;
+    }
+    .inputValue {
+        width: 60%;
+    }
+    .btn {
+        margin-left: 10px;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .city {
+        font-size: 64px;
+    }
+    .date {
+        font-size: 14px;
+    }
+    .clound_icon {
+        width: 180px;
+        height: 180px;
+    }
+    .textblock {
+        margin-top: 0;
+    }
+    .cloundText {
+        font-size: 14px;
+        width: 140px;
+        margin-right: 10px;
+    }
+    .temp {
+        font-size: 84px;
+    }
+    .wetItem {
+        flex-direction: column;
+        width: 100%;
+    }
+    .backg--block {
+        width: 270px;
+        padding-top: 50px;
+    }
+    .wetblock {
+        margin: 0 auto;
+        height: 250px;
+    }
+    .staticsblock {
+        width: 270px;
+        margin-left: 0;
+        top: 0;
+        margin-top: 10px;
+    }
+    .title_weath {
+        font-size: 12px;
+    }
+    .text--wth {
+        font-size: 28px;
+    }
+    .symbol--prh {
+        font-size: 28px;
+    }
+    .text--prh {
+        font-size: 8px;
+        margin-top: 17px;
+    }
+}
+@media (min-width:250px) and (max-width:399px) {
+    body {
+        background: url(./images/fonmobblie.png);
+    }
+    .blog_false {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .blog_true {
+        margin-top: 50px;
+    }
+    .wetblock {
+        width: 280px;
+    }
+    .input_blog {
+        width: 100%;
+    }
+    .inputValue {
+        width: 200px;
+    }
+    .title {
+        font-size: 36px;
+        width: 95%;
+    }
+    .city {
+        font-size: 48px;
+    }
+    .date {
+        font-size: 14px;
+    }
+    .clound_icon {
+        width: 120px;
+        height: 120px;
+    }
+    .textblock {
+        margin-top: 0;
+    }
+    .cloundText {
+        font-size: 14px;
+        width: 140px;
+        margin-right: 10px;
+    }
+    .temp {
+        font-size: 84px;
+    }
+    .wetItem {
+        flex-direction: column;
+        width: 100%;
+    }
+    .backg--block {
+        width: 270px;
+    }
+    .wetblock {
+        margin: 0 auto;
+        height: 250px;
+    }
+    .staticsblock {
+        width: 270px;
+        margin-left: 0;
+        top: 0;
+    }
+    .title_weath {
+        font-size: 12px;
+    }
+    .text--wth {
+        font-size: 28px;
+    }
+    .symbol--prh {
+        font-size: 28px;
+    }
+    .text--prh {
+        font-size: 8px;
+        margin-top: 17px;
+    }
+}

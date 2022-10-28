@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/x-icon" href="./images/Favicon.png">
+    <title>Weather World</title>
+</head>
+<body>
+    <div class="blog_false">
+        <div class="title">Узнайте погоду в любой точке мира</div>
+        <div class="blog_item">
+            <div class="input_blog">
+                <input type="text" class="inputValue" placeholder="Напишите город">
+                <button class="btn" onclick="inputBtn()">Поиск</button>
+            </div>
+        </div>
+    </div>
+    <div class="weatherbcontainer_false">
+        <div class="wetItem">
+            <div class="wetblock">
+                <span class="city text--spawn"></span>
+                <p class="date"></p>
+                <div class="CloudBlock">
+                    <div class="clound_imgb">
+                        <img src="" id="cloudid" alt="">
+                    </div>
+                    <div class="textblock">
+                        <span class="temp"></span>
+                        <div class="block_cloundText">
+                            <span class="cloundText"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wetblock backg--block">
+                <div class="staticsblock">
+                    <div class="statics">
+                        <div class="stattextblock">
+                            <div class="contspawn">
+                                <span class="feels text--wth"></span>
+                            </div>
+                            <div class="title_weath">Чувствуется</div>
+                        </div>
+                        <div class="stattextblock">
+                            <div class="contspawn">
+                                <span class="humidity text--wth"></span>
+                                <div class="prhpercent symbol--prh">%</div>
+                            </div>
+                            <div class="title_weath">Влажность</div>
+                        </div>
+                        <div class="stattextblock">
+                            <div class="contspawn">
+                                <span class="maxtemp text--wth"></span>
+                            </div>
+                            <div class="title_weath">Максимальная t</div>
+                        </div>
+                    </div>
+                    <div class="statics">
+                        <div class="stattextblock">
+                            <div class="contspawn">
+                                <span class="temppressure text--wth"></span>
+                                <div class="prhpressure text--prh">мм.рт.ст</div>
+                            </div>
+                            <div class="title_weath">Давление</div>
+                        </div>
+                        <div class="stattextblock">
+                            <div class="contspawn">
+                                <span class="wind text--wth"></span>
+                                <div class="prhm_s text--prh">м/с</div>
+                            </div>
+                            <div class="title_weath">Ветер</div>
+                        </div>
+                        <div class="stattextblock">
+                            <div class="contspawn">
+                                <span class="mintemp text--wth"></span>
+                            </div>
+                            <div class="title_weath">минимальная t</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+</html>
